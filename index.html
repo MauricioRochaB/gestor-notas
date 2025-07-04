@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestor de Notas con Colores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Gestor de Notas con Colores</h1>
+    <div class="filtros">
+      <input type="text" id="buscar" placeholder="🔍 Buscar por palabra..." />
+      <select id="filtrarColor">
+        <option value="">🎨 Filtrar por color</option>
+        <option value="amarillo">🟨 Amarillo</option>
+        <option value="verde">🟩 Verde</option>
+        <option value="rosa">🩷 Rosa</option>
+        <option value="azul">🟦 Azul</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <button id="abrirModal">➕ Nueva Nota</button>
+    <section id="notas"></section>
+  </main>
+
+  <!-- Modal Crear -->
+  <div class="modal" id="modalNota">
+    <div class="modal-contenido">
+      <h2>Crear Nueva Nota</h2>
+      <textarea id="textoNota" placeholder="Escribe tu nota..."></textarea>
+      <select id="colorNota">
+        <option value="">Elige un color 🎨</option>
+        <option value="amarillo">🟨 Amarillo</option>
+        <option value="verde">🟩 Verde</option>
+        <option value="rosa">🩷 Rosa</option>
+        <option value="azul">🟦 Azul</option>
+      </select>
+      <div class="modal-botones">
+        <button id="guardarNota">Guardar</button>
+        <button id="cerrarModal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Editar -->
+  <div class="modal" id="modalEditar">
+    <div class="modal-contenido">
+      <h2>Editar Nota</h2>
+      <textarea id="textoEditar"></textarea>
+      <div class="modal-botones">
+        <button id="guardarEdicion">Guardar cambios</button>
+        <button onclick="cerrarModal('modalEditar')">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Eliminar -->
+  <div class="modal" id="modalEliminar">
+    <div class="modal-contenido">
+      <h2>¿Eliminar esta nota?</h2>
+      <p>Esta acción no se puede deshacer.</p>
+      <div class="modal-botones">
+        <button id="confirmarEliminar">Sí, eliminar</button>
+        <button onclick="cerrarModal('modalEliminar')">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
