@@ -60,9 +60,9 @@ El uso de `localStorage` permite guardar las notas directamente en el navegador 
 | Filtros por palabra y color | Media | Kelly | ✔️ Completado |
 | Estilos y diseño responsivo | Media | Mauricio | ✔️ Completado |
 | Subida a GitHub | Media | Kelly | ✔️ Completado |
-| Despliegue en GitHub Pages | Media | Kelly | ⏳ Pendiente |
-| Escribir README del proyecto | Baja | Kelly | ✔️ Completado 😎 |
-| Video demo (opcional) | Baja | Kelly | ❌ Pendiente |
+| Despliegue en GitHub Pages | Media | Kelly | ✔️ Completado |
+| Escribir README del proyecto | Baja | Kelly | ✔️ Completado |
+| Video demo (opcional) | Baja | Kelly | ✔️ Completado |
 
 ## 👩‍💻 Desarrollado por
 
